@@ -1,0 +1,58 @@
+<script>
+
+    // array biasa
+    var siswa = [
+        'Aji Kowiyu',
+        'Programmer',
+        3.57,
+        true,
+    ]
+    console.log(siswa[0])
+    console.log(siswa[2])
+
+    console.log('=============')
+
+    // Object
+    var murid = {
+        nama: 'Aji Kowiyu',
+        profesi: 'Programmer',
+        ipk: 3.57,
+        lulus: function () {
+            if (this.ipk >= 3) {
+                return true
+            } else {
+                return false
+            }
+        }
+    }
+    console.log(murid.nama)
+    console.log(murid.profesi)
+    console.log(murid.ipk)
+
+    console.log('=========')
+    console.log(murid['nama']) // cara lain manggil
+    console.log(murid.lulus())
+    console.log('=========')
+
+
+    // latihan
+    var caca = {
+        nama: 'Caca Marica',
+        bb: 45,
+        tinggi: 155,
+        Hobby: ['Nonton', 'makan', 'Shopping', 'Traveling'],
+        sebutkanHobby: function (){
+            var cetakHobi = ''
+            for (var i = 0; i < this.Hobby.length; i++) {
+                cetakHobi = cetakHobi + (i+1) +'. '+ this.Hobby[i] + '\n'
+                    
+            }
+           console.log(
+            'Hobby ' + this.nama + ':\n' +
+            cetakHobi
+            )
+        }
+    }
+    caca.sebutkanHobby()
+
+</script>

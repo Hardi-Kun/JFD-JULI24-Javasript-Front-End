@@ -1,0 +1,57 @@
+<script>
+
+// Array of Object
+// Object in Array
+var mahasiswa_A = 
+{
+    nama: 'Aji Kowiyu',
+    pendidikan_sebelumnya: 'SMK Akuntansi',
+    ipk: 3.5,
+    lulus: true,
+}  
+
+var mahasiswa_B = 
+{
+    nama: 'Aji Kowiyu',
+    pendidikan_sebelumnya: 'SMK Administrasi',
+    ipk: 3.4,
+    lulus: true,
+}  
+
+var mahasiswa_C = 
+{
+    nama: 'Aji Kowiyu',
+    pendidikan_sebelumnya: 'SMA IPA',
+    ipk: 3.2,
+    lulus: true,
+}  
+
+// Dalam Array
+var mhsAll = 
+[
+    {
+        nama: 'Hamada',
+        pendidikan_sebelumnya: 'SMK Akuntansi',
+        ipk: 3.5,
+        lulus: true,
+    },
+    {
+        nama: 'Dion',
+        pendidikan_sebelumnya: 'SMK Administrasi',
+        ipk: 3.4,
+        lulus: true,
+    },
+    {
+        nama: 'Hardi',
+        pendidikan_sebelumnya: 'SMA IPA',
+        ipk: 3.2,
+        lulus: true,
+    },  
+]
+
+for (var i = 0; i < mhsAll.length; i++) {
+    console.log(`Nama: ${mhsAll[i].nama}\nIPK: ${mhsAll[i].ipk}`)
+    
+}
+
+</script>

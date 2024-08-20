@@ -1,0 +1,55 @@
+<script>
+
+// Object Multidimensi
+
+// Object 1D
+var mahasiswa_1D = 
+{
+    nama: 'Aji Kowiyu',
+    pendidikan_sebelumnya: 'SMK',
+    ipk: 3.57,
+    lulus: true,
+}  
+console.log(mahasiswa_1D.pendidikan_sebelumnya)
+
+// Object 2D
+var mahasiswa_2D = 
+{
+    nama: 'Aji Kowiyu',
+    pendidikan_sebelumnya: {
+        smk: 'SMKN 20 JAKARTA',
+        smp: 'SMPN 96',
+        sd: 'SDN 01',
+    },
+    ipk: 3.57,
+    lulus: true,
+}
+console.log(mahasiswa_2D.pendidikan_sebelumnya.smk)
+
+// Object 3D
+var mahasiswa_3D = 
+{
+    nama: 'Aji Kowiyu',
+    pendidikan_sebelumnya: {
+        smk: {
+            nama_sekolah: 'SMKN 20 JAKARTA',
+            alamat: 'JL. TB, SIMATUPANG NO.7 Jakarta Selatan',
+            jurusan: 'Akuntansi'
+        },
+        smp: {
+            nama_sekolah: 'SMPN 20 JAKARTA',
+            alamat: 'JL. Margasatwa NO.21 Jakarta Selatan',
+            jurusan: null
+        },
+        sd: {
+            nama_sekolah: 'SDN 01 JAKARTA',
+            alamat: 'JL. RS. Fatmawati NO.30 Jakarta Selatan',
+            jurusan: null
+        },
+    },
+    ipk: 3.57,
+    lulus: true,
+}
+console.log(mahasiswa_3D.pendidikan_sebelumnya.smk.nama_sekolah)
+
+</script>

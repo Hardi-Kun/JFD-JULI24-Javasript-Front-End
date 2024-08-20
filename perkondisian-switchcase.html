@@ -1,0 +1,35 @@
+<script>
+
+    // terdeteksi di case, karena value pasti
+    var pesanan = "kopi"
+    switch (pesanan) {
+        case "kopi":
+            console.log("Anda pesen", pesanan)
+            break;
+        case "teh":
+            console.log("Anda pesen", pesanan)
+            break;
+        case "jus":
+            console.log("Anda pesen", pesanan)
+            break;
+        default:
+            console.log("Tidak ada pesanan tersebut")
+            break;
+    }
+    
+
+    // tidak akan terdeteksi di case, karena value tidak pasti
+    var nilai = 82.7
+    switch (nilai) {
+        case nilai >= 90 && nilai <= 100:
+            console.log("A")
+            break;
+        case nilai >= 80 && nilai < 90:
+            console.log("B")
+            break;
+        default:
+            console.log("Cek Ulang")
+            break;
+    }
+    
+</script>

@@ -1,0 +1,115 @@
+<script>
+
+    // Contoh Sederhana tanpa function
+//    //var nama = 'Aji Kowiyu'
+//     var upahPerHari = 175000
+//     // var hariKerja = 20
+//     var upahLembur = 55000
+    // var jamLembur = 7
+
+    // var gaji = upahPerHari * hariKerja
+    // var lembur = upahLembur * jamLembur
+    // var takeHomePay = gaji + lembur 
+
+    // console.log( 
+    //     'Slip Gaji \n' + 
+    //     '========= \n' +
+    //     'Staff: ' + nama + '\n' +
+    //     '---------- \n' +
+    //     'Upah/Hari: ' + upahPerHari + ' x ' + hariKerja + ' hari \n'+
+    //     'Total Upah: ' + gaji + '\n' +
+    //     '---------- \n' +
+    //     'Lemburan: ' + upahLembur + ' x ' + jamLembur + ' hari \n' +
+    //     'Total Lemburan: ' + lembur + '\n' +
+    //     '---------- \n' +
+    //     'Gajian Rp ' + takeHomePay.toLocaleString('id-ID')
+    // )
+   
+    // Cara Array dengan looping di dalam function
+    // var  Staff = [
+    //     ['Hardi', 20, 7 ],
+    //     ['Dion', 15, 6 ],
+    //     ['Mada', 25, 8 ],
+    //     ['Davin', 20, 4]
+    // ]
+    // var upahPerHari = 175000
+    // var upahLembur = 55000
+
+    // function cetakSlip_Gaji(dataArray) {
+    //     for (var i = 0; i < dataArray.length; i++) {
+    //         var staf1_nama = dataArray[i][0]
+    //         var staf1_harikerja = dataArray[i][1]
+    //         var staf1_jamlembur = dataArray[i][2]
+    //         var gaji = upahPerHari * staf1_harikerja
+    //         var lembur = upahLembur * staf1_jamlembur
+    //         var takeHomePay = gaji + lembur 
+    //         console.log( 
+    //     'Slip Gaji \n' + 
+    //     '========= \n' +
+    //     'Staff: ' + staf1_nama + '\n' +
+    //     '---------- \n' +
+    //     'Upah/Hari: ' + upahPerHari.toLocaleString('id-ID') + ' x ' + staf1_harikerja + ' hari \n'+
+    //     'Total Upah: ' + gaji.toLocaleString('id-ID') + '\n' +
+    //     '---------- \n' +
+    //     'Lemburan: ' + upahLembur.toLocaleString('id-ID') + ' x ' + staf1_jamlembur + ' hari \n' +
+    //     'Total Lemburan: ' + lembur.toLocaleString('id-ID') + '\n' +
+    //     '---------- \n' +
+    //     'Gajian Rp ' + takeHomePay.toLocaleString('id-ID')
+    // )
+    //     }
+    // }
+
+    // cetakSlip_Gaji(Staff)
+
+    // Cara Sederhana 
+    var karyawan = [
+        ['Naruto', 20, 0],
+        ['Sashuke', 25, 5],
+        ['Sakura', 15, 7],
+        ['Neji', 15, 7]
+    ]
+
+    function format_uang(nominal) {
+        return 'Rp ' + nominal.toLocaleString('id-ID')
+    } 
+
+    function cetak_slip_gaji(nama, hariKerja, jamLembur) {
+        var upahPerHari = 175000
+        var upahLembur = 55000
+    
+        var gaji = upahPerHari * hariKerja
+        var lembur = upahLembur * jamLembur
+        var takeHomePay = gaji + lembur 
+
+        console.log( 
+            'Slip Gaji \n' + 
+            '========= \n' +
+            'Staff: ' + nama + '\n' +
+            '---------- \n' +
+            'Upah/Hari: ' + format_uang(upahPerHari) + ' x ' + hariKerja + ' hari \n'+
+            'Total Upah: ' + format_uang(gaji) + '\n' +
+            '---------- \n' +
+            'Lemburan: ' + format_uang(upahLembur) + ' x ' + jamLembur + ' hari \n' +
+            'Total Lemburan: ' + format_uang(lembur)+ '\n' +
+            '---------- \n' +
+            'Gajian Rp ' + format_uang(takeHomePay)
+        )
+    
+    }
+
+    //panggil function secara manual
+    // cetak_slip_gaji('Naruto', 20, 0)
+    // cetak_slip_gaji('Sashuke', 20, 0)
+    // cetak_slip_gaji('Sakura', 20, 0)
+    
+    // panggil function otomatis dengan looping
+    for (var i = 0; i < karyawan.length; i++) {
+        cetak_slip_gaji(karyawan[i][0], karyawan[i][1], karyawan[i][2])
+        
+    }
+    
+
+    //toLocalString untuk ganti format angka atau merapihkan format sejumlah angka menjadi cth : 3.885.00
+    //tadinya bentuknya seprti ini sblm toLocalString = 3,885,00 atau 3885000
+
+</script>

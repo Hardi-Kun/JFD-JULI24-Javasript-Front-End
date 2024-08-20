@@ -1,0 +1,45 @@
+<script>
+
+   // daripada membuat 1 variabel untuk 1 data
+   var gadget1 = 'laptop'
+   var gadget2 = 'smartphone'
+   var gadget3 = 'mouse'
+   
+   // lebih baik dikelompokkan ke dalam array
+   var gadget = ['laptop', 'snartphone', 'mouse', 'earphone', 'HDD', 'FLD']
+
+   // menampilkan value satuan
+   console.log(gadget[3])
+
+   // mengetahui jumlah data di dala array
+   console.log(gadget.length)
+
+   // menambahkan data baru ke dalam array
+   console.log(gadget.push('smart watch'))
+
+   // menghapus data dari belakang
+   console.log(gadget.pop())
+
+   // menampilkan value semua
+   console.log(gadget)
+
+   // mencari posisi/indeks array berdasarkan value
+   console.log(gadget.indexOf('mouse'))
+
+   console.log('============================')
+
+   // Print semua data secara manual(hardcode)
+   // console.log( gadget[0])
+   // console.log( gadget[1])
+   // console.log( gadget[2])
+   // console.log( gadget[3])
+   // console.log( gadget[4])
+
+   // Print semua data secara otomatis
+   // dengan menggunakan looping terhadap Array
+   for (var i = 0; i < gadget.length; i++) {
+        console.log(gadget[i])
+    
+   }
+
+</script>

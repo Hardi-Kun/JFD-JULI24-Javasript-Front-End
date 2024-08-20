@@ -1,0 +1,136 @@
+<script>
+
+    // var gadget = 
+    // [
+    //     ['windows', 'mac', 'linux'], //0
+    //     ['android', 'ios'], //1
+    //     'mouse' , //2
+    //     'earphone' //3
+
+    // ]
+
+    // console.log( gadget )
+    // console.log( [1][1])
+
+    // Studi Kasus
+    var murid = [
+        [1, 'Vincent', 3.5],
+        [2, 'Udin', 3.0],
+        [3, 'Mamang', 2.1],
+        [4, 'Hardi', 4,0],
+        [5, 'Kei', 3.9],
+
+    ]
+
+    var guru = [
+        [1, 'Guru Gembult', 3.5],
+        [2, 'Jerome Polin', 3.0],
+        [3, 'Sandika Galih', 2.1],
+        [4, 'Eko Kurniawan', 4,0],
+        [5, 'Erico Dharmawan', 3.9],
+
+    ]
+
+    var staff = [
+        [1, 'Davin', 3.5],
+        [2, 'Dion', 3.0],
+        [3, 'Elang', 2.1],
+        [4, 'Hardi', 4,0],
+        [5, 'Drajad', 3.9],
+
+    ]
+
+    var caraka = [
+        [1, 'Suki', 3.5],
+        [2, 'Jaka', 3.0],
+        [3, 'Manto', 2.1],
+        [4, 'Hanif', 4,0],
+        [5, 'Bambang', 3.9],
+    ]
+
+    
+
+    // console.log( murid[0][0] + '. ' + murid[0][1] +', IPK ='+ murid[0][2])
+    
+    // var syarat_lulus = 3.0
+
+    // var murid1_nomor = murid[0][0]
+    // var murid1_nama = murid[0][1]
+    // var murid1_nilai = murid[0][2]
+    // var murid1_status = ''
+    // if (murid1_nilai >= syarat_lulus) {
+    //     murid1_status = 'Lulus'
+    // } else {
+    //     murid1_status = 'Gagal'
+    // }
+    // var murid1_cetak = murid1_nomor +'. '+ murid1_nama+', IPK = '+ murid1_nilai +', '+ murid1_status
+    // console.log(murid1_cetak)
+
+    // var murid2_nomor = murid[1][0]
+    // var murid2_nama = murid[1][1]
+    // var murid2_nilai = murid[1][2]
+    // var murid2_status = ''
+    // if (murid2_nilai >= syarat_lulus) {
+    //     murid2_status = 'Lulus'
+    // } else {
+    //     murid2_status = 'Gagal'
+    // }
+    // var murid2_cetak = murid2_nomor +'. '+ murid2_nama+', IPK = '+ murid2_nilai +', '+ murid2_status
+    // console.log(murid2_cetak)
+
+    // var murid3_nomor = murid[2][0]
+    // var murid3_nama = murid[2][1]
+    // var murid3_nilai = murid[2][2]
+    // var murid3_status = ''
+    // if (murid3_nilai >= syarat_lulus) {
+    //     murid3_status = 'Lulus'
+    // } else {
+    //     murid1_status = 'Gagal'
+    // }
+    // var murid1_cetak = murid1_nomor +'. '+ murid1_nama+', IPK = '+ murid1_nilai +', '+ murid1_status
+    // console.log(murid1_cetak)
+
+    // console.log('============================')
+
+    // for (var i = 0; i < murid.length; i++) {
+    //     var murid1_nomor = murid[i][0]
+    //     var murid1_nama = murid[i][1]
+    //     var murid1_nilai = murid[i][2]
+    //     var murid1_status = ''
+    //         if (murid1_nilai >= syarat_lulus) {
+    //             murid1_status = 'Lulus'
+    //         } else {
+    //             murid1_status = 'Gagal'
+    //         }
+    // var murid1_cetak = murid1_nomor +'. '+ murid1_nama+', IPK = '+ murid1_nilai +', '+ murid1_status
+    // console.log(murid1_cetak)
+    // }
+
+    // function
+    console.log('++++++++++++++++++++++++++++++++')
+
+    function cetak_semua_nilai(dataArray) {
+        for (var i = 0; i < dataArray.length; i++) {
+        var murid_nomor = dataArray[i][0]
+        var murid_nama = dataArray[i][1]
+        var murid_nilai = dataArray[i][2]
+        var murid_status = ''
+        var syarat_lulus = 3.0
+            if (murid_nilai >= syarat_lulus) {
+                murid_status = 'Lulus'
+            } else {
+                murid_status = 'Gagal'
+            }
+            var murid_cetak = murid_nomor +'. '+ murid_nama+', IPK = '+ murid_nilai +', '+ murid_status
+            console.log(murid_cetak)
+            
+        }
+        console.log('------------------------')
+    }
+
+    cetak_semua_nilai(murid)
+    cetak_semua_nilai(guru)
+    cetak_semua_nilai(staff)
+    cetak_semua_nilai(caraka)
+
+</script>
